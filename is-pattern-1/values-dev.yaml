@@ -29,7 +29,7 @@ wso2:
   deployment:
     wso2is:
       # Number of deployment replicas
-      replicas: 2
+      replicas: 1
       # Minimum number of seconds for which a newly created pod should be ready without any of its containers crashing, for it to be considered available.
       minReadySeconds: 30
       strategy:
