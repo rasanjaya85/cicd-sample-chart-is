@@ -55,13 +55,13 @@ wso2:
         # as per official documentation (https://docs.wso2.com/display/IS580/Installation+Prerequisites).
         requests:
           # The minimum amount of memory that should be allocated for a Pod
-          memory: "2Gi"
+          memory: "1Gi"
           # The minimum amount of CPU that should be allocated for a Pod
-          cpu: "2000m"
+          cpu: "1000m"
         limits:
           # The maximum amount of memory that should be allocated for a Pod
-          memory: "4Gi"
+          memory: "2Gi"
           # The maximum amount of CPU that should be allocated for a Pod
-          cpu: "4000m"
+          cpu: "1000m"
       # Refer to the Kubernetes documentation on updating images (https://kubernetes.io/docs/concepts/containers/images/#updating-images)
       imagePullPolicy: Always
