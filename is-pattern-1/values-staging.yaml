@@ -41,13 +41,13 @@ wso2:
       # Indicates whether the container is running.
       livenessProbe:
         # Number of seconds after the container has started before liveness probes are initiated.
-        initialDelaySeconds: 250
+        initialDelaySeconds: 180
         # How often (in seconds) to perform the probe.
         periodSeconds: 10
       # Indicates whether the container is ready to service requests.
       readinessProbe:
         # Number of seconds after the container has started before readiness probes are initiated.
-        initialDelaySeconds: 250
+        initialDelaySeconds: 120
         # How often (in seconds) to perform the probe.
         periodSeconds: 10
       resources:
@@ -55,13 +55,13 @@ wso2:
         # as per official documentation (https://docs.wso2.com/display/IS580/Installation+Prerequisites).
         requests:
           # The minimum amount of memory that should be allocated for a Pod
-          memory: "2Gi"
+          memory: "1Gi"
           # The minimum amount of CPU that should be allocated for a Pod
-          cpu: "2000m"
+          cpu: "1000m"
         limits:
           # The maximum amount of memory that should be allocated for a Pod
-          memory: "4Gi"
+          memory: "2Gi"
           # The maximum amount of CPU that should be allocated for a Pod
-          cpu: "4000m"
+          cpu: "2000m"
       # Refer to the Kubernetes documentation on updating images (https://kubernetes.io/docs/concepts/containers/images/#updating-images)
       imagePullPolicy: Always
